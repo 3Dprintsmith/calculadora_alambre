@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Alambre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Alambre</h1>
+        
+        <form id="wireCalculator">
+            <div id="dimensionsContainer">
+                <div class="dimension-row">
+                    <div>
+                        <label>Dimensión (mm):</label>
+                        <input type="number" class="dimension" min="0" step="any" required>
+                    </div>
+                    <div>
+                        <label>Cantidad:</label>
+                        <input type="number" class="quantity" min="1" required>
+                    </div>
+                    <div>
+                        <label>Tipo de Alambre:</label>
+                        <select class="wireType" required>
+                            <option value="0.225">N° 4</option>
+                            <option value="0.164">N° 6</option>
+                            <option value="0.107">N° 8</option>
+                            <option value="0.071">N° 10</option>
+                            <option value="0.047">N° 12</option>
+                            <option value="0.021">N° 15</option>
+                            <option value="0.027">N° 14</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <button type="button" id="addDimension" class="btn-add">Agregar Dimensión</button>
+                <button type="submit" class="btn-calculate">Calcular</button>
+            </div>
+        </form>
+
+        <table id="summaryTable" class="hidden">
+            <thead>
+                <tr>
+                    <th>Tipo de Alambre</th>
+                    <th>Dimensión Total (mm)</th>
+                    <th>Consumo Total en Kilogramos</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
