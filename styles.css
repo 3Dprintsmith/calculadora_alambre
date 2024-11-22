@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d2d2d; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333; /* Texto dentro del contenedor */
+}
+
+h1 {
+    text-align: center;
+    color: #1a365d;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2d3748;
+}
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.dimension-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: flex-end;
+}
+
+.dimension-row input,
+.dimension-row select {
+    flex: 1;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-add {
+    background-color: #4299e1;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-calculate {
+    background-color: #48bb78;
+    color: white;
+}
+
+.btn-remove {
+    background-color: #f56565;
+    color: white;
+    padding: 5px 10px;
+    height: 37px;
+}
+
+#summaryTable {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#summaryTable th, #summaryTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+v
